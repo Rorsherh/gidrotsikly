@@ -1,7 +1,134 @@
+// main-header start
 .main-header {
-  font-family: "SFProDisplay", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
+  &__top {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2f3035;
+  }
+  &__wrapper {
+    max-width: 1200px;
+    padding: 25px 15px 19px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    width: 40%;
+    max-width: 450px;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__box-content {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    max-width: 450px;
+    padding-top: 4px;
+  }
+
+  &__adress {
+    padding-left: 35px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../icons/adress-ico.svg");
+      width: 30px;
+      height: 30px;
+      left: 0;
+      top: -10px;
+    }
+  }
+
+  &__user-list {
+    width: 120px;
+    display: flex;
+    justify-content: start;
+  }
+
+  &__user-list-item {
+    margin-right: 10px;
+  }
+
+  .user-basket {
+    position: relative;
+  }
+
+  .user-basket__num {
+    position: absolute;
+    font-weight: 500;
+    color: #fff;
+    font-size: 10px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #1c62cd;
+    border-radius: 50%;
+    text-align: center;
+    bottom: -6px;
+    right: -14px;
+  }
+
+  &__bottom {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2f3035;
+    background-color: #f0f0f4;
+  }
+
+  // &__wrapper--bottom {
+  //   padding-top: 15px;
+  //   padding-bottom: 15px;
+  // }
+
+  &__categories-list {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__categories-link {
+    transition: all 0.3s;
+    font-weight: 400;
+    color: #2f3035;
+    padding: 15px 0 14px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 0;
+      left: auto;
+      right: 0;
+      position: absolute;
+      background-color: #1c62cd;
+      height: 3px;
+      bottom: -2px;
+      transition: all 0.3s;
+    }
+    &:hover {
+      color: #000;
+      text-shadow: black 0 0 1px;
+    }
+    &:hover::before {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
 }
-.main-header__nav {
-  font-weight: 900;
-  color: green;
-}
+// main-header end
