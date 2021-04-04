@@ -42,7 +42,11 @@ body {
   font-weight: normal;
 }
 
-html {
-  font-size: 225px;
+.main-header {
+  font-family: "SFProDisplay", sans-serif;
+}
+
+.main-header__nav {
+  font-weight: 900;
 }
 /*# sourceMappingURL=style.css.map */
