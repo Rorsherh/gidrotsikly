@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "SF Pro Display";
   src: url("../fonts/SFProDisplay-Regular.woff"),
     url("../fonts/SFProDisplay-Regular.woff2");
   font-weight: 400;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "SF Pro Display";
   src: url("../fonts/SFProDisplay-Medium.woff"),
     url("../fonts/SFProDisplay-Medium.woff2");
   font-weight: 500;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "SF Pro Display";
   src: url("../fonts/SFProDisplay-Semibold.woff"),
     url("../fonts/SFProDisplay-Semibold.woff2");
   font-weight: 600;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "SF Pro Display";
   src: url("../fonts/SFProDisplay-Bold.woff"),
     url("../fonts/SFProDisplay-Bold.woff2");
   font-weight: 700;
