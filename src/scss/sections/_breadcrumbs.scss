@@ -1,0 +1,31 @@
+.breadcrumbs {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #c4c4c4;
+
+  &__wrapper {
+    padding-top: 43px;
+    padding-bottom: 41px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    padding-right: 16px;
+    margin-right: 10px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 9px;
+      background-image: url("../icons/link-arrow.svg");
+      right: 0px;
+      top: 5px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+}

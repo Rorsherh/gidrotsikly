@@ -1,4 +1,8 @@
-@import "sections/_mixin";
-@import "sections/_global-style";
+@import "sections/mixin";
+@import "sections/global-style";
 
+// index
 @import "sections/main-header";
+
+// catalog
+@import "sections/breadcrumbs";
