@@ -16,15 +16,16 @@
     font-size: 30px;
     line-height: 36px;
     color: #2f3035;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   &__filter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @include borderblue;
-    padding-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
   }
 
   &__filter-list {
@@ -90,6 +91,24 @@
 
   &__serch-form {
     @include borderblack;
-    width: 301px;
+    width: 299px;
+  }
+
+  &__product-list {
+    @include borderblue;
+    max-width: 870px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__product-item {
+    width: 270px;
+    height: 403px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    outline: 1px solid red;
+    background-color: gainsboro;
   }
 }
