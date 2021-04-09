@@ -7,6 +7,7 @@
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: #2f3035;
+    margin-bottom: 48px;
     span {
       display: inline;
       position: relative;
@@ -20,5 +21,80 @@
         background-color: #1c62cd;
       }
     }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item-togle {
+    margin-bottom: 41px;
+  }
+
+  &__item-suptitle {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 27px;
+    margin-bottom: 15px;
+    line-height: 19px;
+    color: #2f3035;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 8px;
+      background: url("../icons/serchForm-arrow.svg") center center no-repeat;
+      transform: rotate(deg);
+      left: 0;
+      top: 8px;
+    }
+    &--active::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__item-content {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70px;
+  }
+
+  &__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2f3035;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+  }
+
+  &__castom-checkbox {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+  }
+
+  &__checkbox:hover input ~ .search-form__castom-checkbox {
+    background-color: #ccc;
+  }
+
+  &__checkbox input:checked ~ .search-form__castom-checkbox {
+    background-color: #1c62cd;
+    border-color: #1c62cd;
   }
 }
