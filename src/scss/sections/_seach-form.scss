@@ -29,7 +29,7 @@
   }
 
   &__item-togle {
-    margin-bottom: 41px;
+    margin-bottom: 21px;
   }
 
   &__item-suptitle {
@@ -40,6 +40,7 @@
     margin-bottom: 15px;
     line-height: 19px;
     color: #2f3035;
+    cursor: pointer;
     &::after {
       position: absolute;
       content: "";
@@ -49,7 +50,6 @@
       transform: rotate(90deg);
       left: 0;
       top: 8px;
-      z-index: 10;
     }
     &--active::after {
       transform: rotate(180deg);
@@ -60,10 +60,18 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
   }
 
   &__item-content--padding {
     padding-right: 70px;
+  }
+
+  &__item-content--padding30 {
+    padding-right: 30px;
   }
 
   &__checkbox {
@@ -71,16 +79,21 @@
     position: relative;
     padding-left: 27px;
     cursor: pointer;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #2f3035;
+    color: #000;
+    margin-bottom: 20px;
     input {
       position: absolute;
       opacity: 0;
       cursor: pointer;
       height: 0;
       width: 0;
+    }
+    &--width50 {
+      width: 38%;
+      margin-bottom: 20px;
     }
   }
 
@@ -103,12 +116,36 @@
     border-color: #1c62cd;
   }
 
+  &__box-show-hide {
+    padding-top: 8px;
+    margin-bottom: 36px;
+  }
+
+  &__more-btn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #1c62cd;
+  }
+
+  &__input-text {
+    width: 95%;
+    height: 30px;
+    left: 374px;
+    top: 1183px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    padding-left: 25px;
+    margin-bottom: 18px;
+  }
+
   &__range-slider {
     position: relative;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     width: 95%;
-    @include borderblue;
 
     .irs-line {
       height: 2px;
@@ -157,7 +194,7 @@
     line-height: 17px;
 
     input {
-      font-family: Barlow;
+      font-family: "Barlow", sans-serif;
       border: none;
       margin: 0;
       padding: 0;
@@ -168,5 +205,120 @@
       cursor: pointer;
       outline: none;
     }
+  }
+
+  &__item-list {
+    margin: 0;
+    margin-top: -5px;
+    margin-bottom: 38px;
+    padding: 0;
+  }
+
+  &__item-list-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #c4c4c4;
+  }
+  &__item-list-suptitle {
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+    font-family: SF Pro Display;
+    font-style: 400;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2f3035;
+  }
+  &__item-list-select {
+    padding-right: 20px;
+    select {
+      outline: none;
+      font-family: "Barlow", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgba(0, 0, 0, 0.6);
+      border-radius: 3px;
+      border: none;
+    }
+  }
+
+  &__actions-list {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__action-item {
+    margin: 0;
+    padding: 6px 15px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #bdbec2;
+    background-color: #f0f0f4;
+    transition: all 0.2s;
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+    &--active {
+      color: #fff;
+      background-color: #1c62cd;
+    }
+  }
+
+  &__btn-search {
+    display: block;
+    width: 252px;
+    height: 50px;
+    margin: 0 auto 18px;
+    border: none;
+    background-color: #f0f0f4;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #bdbec2;
+    cursor: pointer;
+  }
+
+  &__end-form-box {
+    margin-bottom: 15px;
+  }
+
+  &__end-form-more {
+    width: 166px;
+    height: 16px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2f3035;
+  }
+
+  &__end-form-more-content {
+    display: none;
+  }
+
+  &__btn-reset {
+    display: block;
+    align-items: center;
+    font-weight: 400;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #c4c4c4;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
   }
 }

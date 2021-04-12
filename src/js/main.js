@@ -79,4 +79,11 @@ $(document).ready(function(){
         $(this).prop("value", val);
     });
     // ползунок end ------------- ------------------ ---------------- ---  - ---
+
+    // Кнопки акций start ++++++++++++++++++++++++++++++++++++++++
+    $('.search-form__action-item').on('click',function(){
+        $(this).toggleClass('search-form__action-item--active');
+    })
+    // Кнопки акций end ---------- ------------- ------------- ------------------- -------------- -
+
 });
