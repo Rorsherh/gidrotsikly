@@ -46,9 +46,10 @@
       width: 12px;
       height: 8px;
       background: url("../icons/serchForm-arrow.svg") center center no-repeat;
-      transform: rotate(deg);
+      transform: rotate(90deg);
       left: 0;
       top: 8px;
+      z-index: 10;
     }
     &--active::after {
       transform: rotate(180deg);
@@ -58,6 +59,10 @@
   &__item-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item-content--padding {
     padding-right: 70px;
   }
 
@@ -96,5 +101,72 @@
   &__checkbox input:checked ~ .search-form__castom-checkbox {
     background-color: #1c62cd;
     border-color: #1c62cd;
+  }
+
+  &__range-slider {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    @include borderblue;
+
+    .irs-line {
+      height: 2px;
+      border-color: #e0e0e0;
+      top: 5px;
+    }
+
+    .irs-bar {
+      top: 5px;
+      height: 4px;
+      background-color: #1c62cd;
+    }
+
+    .irs-handle {
+      top: 3px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: none;
+      background-color: #1c62cd;
+      &:hover {
+        background-color: #1c62cd;
+      }
+      &:active {
+        background-color: #1c62cd;
+      }
+    }
+  }
+
+  &__range-input-box {
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  &__range-input {
+    margin: 0;
+    padding: 0;
+    color: #2f3035;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    input {
+      font-family: Barlow;
+      border: none;
+      margin: 0;
+      padding: 0;
+      display: inline;
+      max-width: 60px;
+      text-decoration-line: underline;
+      color: #2f3035;
+      cursor: pointer;
+      outline: none;
+    }
   }
 }
