@@ -1,5 +1,52 @@
 $(document).ready(function(){
 
+// console.log("hello1");
+    // слайдер на index странице +++++ +++++   ++++++++ +++++ +++++   ++++
+    var slides = $(".index-slider__slide-item");
+    var slideIndex = 1;
+    if (slides.length !==0) {
+        
+        showSlides(slideIndex);
+    }
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+/**
+ * функция создающая слайдер на главной странице.
+ */
+    function showSlides(_sliderIndex) {
+        console.log("hello");
+        var i;
+        
+        var dots = document.getElementsByClassName("index-slider__dot");    
+        if (_sliderIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        if (_sliderIndex < 1) {
+            slideIndex = slides.length;
+        }
+
+        for (i =0; i<slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace("index-slider__dot--active", "");
+        }
+
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " index-slider__dot--active";
+        console.log(slideIndex);
+        
+    };
+    // слайдер на index странице -------- ------------ ----------- ---------
+
     // кастомные чекбоксы ++++++++++++++++ +++++++++++++++++ ++++++++++++++++++ ++++++++++
         $('.search-form__item-suptitle').on('click',function(){
         $(this).toggleClass('search-form__item-suptitle--active');
