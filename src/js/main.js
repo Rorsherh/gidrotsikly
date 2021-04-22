@@ -4,7 +4,9 @@ $(document).ready(function(){
     if ($('section').is('.index-slider')) {
     // слайдер на index странице +++++ +++++   ++++++++ +++++ +++++   ++++
     $('.index-slider').slick({
-        dots: true
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 4000
     });
     }
     // слайдер на index странице -------- ------------ ----------- ---------
