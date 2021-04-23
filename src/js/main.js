@@ -1,8 +1,7 @@
 $(document).ready(function(){
-
-// console.log("hello1");
-    if ($('section').is('.index-slider')) {
     // слайдер на index странице +++++ +++++   ++++++++ +++++ +++++   ++++
+    if ($('section').is('.index-slider')) {
+    
     $('.index-slider').slick({
         dots: true,
         autoplay: true,

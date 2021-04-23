@@ -14,14 +14,12 @@
   &__slider {
     margin: 0;
     padding: 0;
-    @include borderblue;
     width: 100%;
     max-width: 870px;
   }
 
-  &__action {
+  &__sale {
     min-height: 50px;
-    @include borderblue;
     width: 400%;
     max-width: 265px;
   }
