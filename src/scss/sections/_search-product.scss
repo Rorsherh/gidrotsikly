@@ -1,0 +1,92 @@
+.search-product {
+  &__wrapper {
+    min-height: 100px;
+    @include borderblack;
+    max-width: 1200px;
+    padding: 58px 15px 19px;
+    margin: 0 auto;
+  }
+
+  &__tab-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__tab-item {
+    position: relative;
+    margin: 0;
+    margin-right: 13px;
+    padding: 0;
+
+    input {
+      display: none;
+    }
+
+    label {
+      display: block;
+      font-family: SF Pro Display;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0;
+      padding: 11px 25px 12px;
+      color: #2f3035;
+      transition: all 0.3s;
+    }
+
+    input[type="radio"]:checked + label {
+      font-family: SF Pro Display;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #2f3035;
+      text-shadow: 0 0 0.5px #000, 0 0 0.5px #000;
+      background: #f0f0f4;
+      border-radius: 5px;
+    }
+  }
+
+  &__inner {
+    widows: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+  }
+
+  &__input-text {
+    width: 100%;
+    max-width: 1025px;
+    margin: 0;
+    background: #f0f0f4;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 20px;
+
+    &::placeholder {
+      font-family: SF Pro Display;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #656464;
+    }
+  }
+
+  &__submit {
+    width: 145px;
+    padding: 0;
+    margin: 0;
+    background-color: #1c62cd;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+  }
+}

@@ -118,11 +118,12 @@
       background-color: #1c62cd;
       height: 3px;
       bottom: -2px;
+      letter-spacing: 0.1em;
       transition: all 0.3s;
     }
     &:hover {
       color: #000;
-      text-shadow: black 0 0 1px;
+      text-shadow: 0 0 0.65px #000, 0 0 0.65px #000;
     }
     &:hover::before {
       width: 100%;

@@ -165,32 +165,31 @@
 
         <form action="#" class="search-product">
             <div class="search-product__wrapper">
-                <ul class="search-product__tablist">
-                    <li class="Seacrh-product__tab-item">
-                        <input type="radio" name="param" id="tab-1" checked>
+                <ul class="search-product__tab-list">
+                    <li class="search-product__tab-item">
+                        <input type="radio" name="param" id="tab-1">
                         <label for="tab-1">
-                            1234
+                            Поиск по номеру
                         </label>
                     </li>
-                    <li class="Seacrh-product__tab-item">
-                        <input type="radio" name="param" id="tab-2">
+                    <li class="search-product__tab-item">
+                        <input type="radio" name="param" id="tab-2" checked>
                         <label for="tab-2">
-                            1234
+                            Поиск по марке
                         </label>
                     </li>
-                    <li class="Seacrh-product__tab-item">
+                    <li class="search-product__tab-item">
                         <input type="radio" name="param" id="tab-3">
                         <label for="tab-3">
-                            1234
+                            Поиск по названию товара
                         </label>
                     </li>
                 </ul>
                 <div class="search-product__inner">
-                    <input type="text" name="" id="">
-                    <input type="submit" value="">
+                    <input class="search-product__input-text" type="text" name="" id="" placeholder="поиск">
+                    <input type="submit" class="search-product__submit" value="искать">
                 </div>
         </form>
-        </div>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

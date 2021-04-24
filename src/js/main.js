@@ -10,6 +10,27 @@ $(document).ready(function(){
     }
     // слайдер на index странице -------- ------------ ----------- ---------
 
+    //    ++++    фогрма поиска товаров  ++++++++++++++++++++++++++++++++++++++++++++++++
+    if ($('.search-product').length !== 0) {
+        $('.search-product__tab-item label').on('click', function(e) {
+                e.preventDefault();
+                let idTabActive = $(this).attr('for');
+            if (String(idTabActive) == 'tab-1') {
+                $('.search-product__input-text').prop('placeholder', 'Введите номер');
+            }
+            else if  (String(idTabActive) == 'tab-2') {
+                $('.search-product__input-text').prop('placeholder', 'Введите марку');
+            } 
+            else if (String(idTabActive) == 'tab-3'){
+                $('.search-product__input-text').prop('placeholder', 'Введите название товара');
+            }
+        })
+        
+        
+    }
+    
+    //    ----    фогрма поиска товаров  ---------------------        ------------------ --------------
+
     // кастомные чекбоксы ++++++++++++++++ +++++++++++++++++ ++++++++++++++++++ ++++++++++
         $('.search-form__item-suptitle').on('click',function(){
         $(this).toggleClass('search-form__item-suptitle--active');
