@@ -1,0 +1,11 @@
+.banner {
+  &__wrapper {
+    @include borderblack;
+    max-width: 1200px;
+    padding: 65px 15px 19px;
+    margin: 0 auto;
+  }
+  &__link {
+    display: block;
+  }
+}

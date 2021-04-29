@@ -1,0 +1,96 @@
+.products {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  min-height: 100px;
+  &__wrapper {
+    max-width: 1200px;
+    padding: 32px 15px 19px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  &__filter-list {
+    display: flex;
+    margin-bottom: 24px;
+  }
+  &__filter-item {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2f3035;
+    padding-bottom: 10px;
+    &--active {
+      border-bottom: 2px solid #1c62cd;
+    }
+    & + .products__filter-item {
+      margin-left: 50px;
+    }
+  }
+
+  &__content {
+    margin-bottom: 37px;
+  }
+
+  &__slider-item-inner {
+    width: 271px;
+  }
+
+  &__slider {
+    .slick-prev {
+      display: block;
+      position: absolute;
+      font-size: 0;
+      width: 16px;
+      height: 30px;
+      background-color: pink;
+      background: url("../icons/arrow-black-left.svg") center center/cover
+        no-repeat;
+      top: 45.5%;
+      left: -3%;
+      cursor: pointer;
+      border: none;
+      z-index: 10;
+    }
+
+    .slick-next {
+      display: block;
+      position: absolute;
+      font-size: 0;
+      width: 16px;
+      height: 30px;
+      background-color: pink;
+      background: url("../icons/arrow-black-right.svg") center center/cover
+        no-repeat;
+      top: 45.5%;
+      right: -3%;
+      cursor: pointer;
+      border: none;
+    }
+  }
+
+  &__more {
+    display: block;
+    max-width: 252px;
+    padding: 16px 43px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2f3035;
+    background: #f0f0f4;
+    border-radius: 3px;
+  }
+}
