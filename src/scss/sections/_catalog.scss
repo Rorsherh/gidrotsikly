@@ -94,7 +94,6 @@
   }
 
   &__product-list {
-    @include borderblue;
     max-width: 870px;
     display: flex;
     justify-content: space-between;
@@ -107,7 +106,6 @@
     margin: 0;
     margin-bottom: 30px;
     padding: 0;
-    outline: 1px solid red;
   }
 
   &__pagination {
