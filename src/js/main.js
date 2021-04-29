@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // слайдер на index странице +++++ +++++   ++++++++ +++++ +++++   ++++
+    // слайдер на index странице start +++++ +++++   ++++++++ +++++ ++++
     if ($('section').is('.index-slider')) {
     
     $('.index-slider').slick({
@@ -8,13 +8,12 @@ $(document).ready(function(){
         autoplaySpeed: 4000
     });
     }
-    // слайдер на index странице -------- ------------ ----------- ---------
+    // слайдер на index странице end ------------ ----------- ---------
 
-    //    ++++    фогрма поиска товаров  ++++++++++++++++++++++++++++++++++++++++++++++++
+    //    ++++    фогрма поиска товаров start +++++  +++++++  ++++++  +++++++++++
     if ($('.search-product').length !== 0) {
         $('.search-product__tab-item label').on('click', function(e) {
-                e.preventDefault();
-                let idTabActive = $(this).attr('for');
+            let idTabActive = $(this).attr('for');
             if (String(idTabActive) == 'tab-1') {
                 $('.search-product__input-text').prop('placeholder', 'Введите номер');
             }
@@ -29,7 +28,27 @@ $(document).ready(function(){
         
     }
     
-    //    ----    фогрма поиска товаров  ---------------------        ------------------ --------------
+    //    ----    фогрма поиска товаров  end --------------   ---------- --------
+
+    //  +++ ++++ +++++++  слайдер товаров  start   +++++++++ ++++++++++++++++        ++++++++++
+    if ($('.products__slider').length !== 0) {
+        $('.products__slider').slick({
+            infinity: false,
+            slidesToShow: 4,
+            slidesToScroll: 1
+        });
+    }
+    // ------ --------- слайдер товаров end ------- ---------- -------- -------- 
+
+//    ++++    ++++  карточка товаров start  ++++    ++++
+if ($('.product-card').length !==0) {
+    $('.product-card__favorite').on('click',function(){
+        $(this).toggleClass('product-card__favorite--active');
+    });
+}
+//    ----    ---- карточка товаров end  ----    ----
+
+
 
     // кастомные чекбоксы ++++++++++++++++ +++++++++++++++++ ++++++++++++++++++ ++++++++++
         $('.search-form__item-suptitle').on('click',function(){
