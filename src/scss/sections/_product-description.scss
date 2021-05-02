@@ -1,0 +1,75 @@
+.product-description {
+  font-family: SF Pro Display;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2f3035;
+
+  &__wrapper {
+    max-width: 1200px;
+    padding: 5px 15px 19px;
+    margin: 0 auto;
+  }
+
+  &__top-content {
+    @include borderblue;
+    padding-bottom: 20px;
+  }
+
+  &__picture {
+    @include borderblack;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__img img {
+    display: block;
+  }
+
+  &__old-price {
+    position: relative;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    opacity: 0.6;
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 135px;
+      height: 1px;
+      background-color: #2f3035;
+      bottom: 18px;
+      left: 2px;
+      transform: rotate(-9deg);
+    }
+  }
+
+  &__new-price {
+    margin-bottom: 15px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #2f3035;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #1c62cd;
+  }
+}
