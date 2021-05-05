@@ -14,15 +14,32 @@
   &__top-content {
     @include borderblue;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__picture {
-    @include borderblack;
+    position: relative;
     max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
+    &--sale::after {
+      position: absolute;
+      display: block;
+      content: "sale";
+      top: 0;
+      left: 0;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #1c62cd;
+      padding: 13px 25px;
+    }
   }
 
   &__img {
@@ -71,5 +88,121 @@
     font-size: 15px;
     line-height: 18px;
     color: #1c62cd;
+  }
+
+  &__main {
+    width: 570px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2f3035;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+
+  &__code {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2f3035;
+    opacity: 0.6;
+    margin-bottom: 23px;
+  }
+
+  &__button-list {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__button-item {
+    font-size: 0;
+    line-height: 0;
+    &--love {
+      margin-right: 27px;
+    }
+    &--compare {
+      margin-right: 22px;
+    }
+  }
+
+  &__button-love {
+    width: 24px;
+    height: 22px;
+    background: url("../icons/heart.svg") center center/cover no-repeat;
+  }
+
+  &__button-compare {
+    width: 20px;
+    height: 26px;
+    background: url("../icons/compare.svg") center center/cover no-repeat;
+  }
+
+  &__tabs-wrapper {
+    min-height: 320px;
+    margin-bottom: 20px;
+  }
+
+  &__tab {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2f3035;
+    opacity: 0.6;
+    margin-right: 42px;
+    padding-bottom: 5px;
+  }
+  &__tab--active {
+    text-shadow: 0 0 0.65px #000, 0 0 0.65px #000;
+    opacity: 1;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #1c62cd;
+  }
+
+  &__tab-item {
+    padding-top: 23px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2f3035;
+  }
+
+  &__feature-item {
+    max-width: 440px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+    padding-bottom: 5px;
+    margin-bottom: 15.5px;
+    span {
+      padding-right: 10px;
+    }
+    &-right {
+      width: 135px;
+    }
+    &:last-child {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__feature-more {
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #1c62cd;
+  }
+
+  &__buy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #1c62cd;
+    padding: 16px 55px;
   }
 }
