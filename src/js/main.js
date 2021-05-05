@@ -136,4 +136,26 @@ if ($('.product-card').length !==0) {
     })
     // Кнопки акций end ---------- ------------- ------------- ------------------- -------------- -
 
+
+    //  Страница товара
+
+    if ($('.product-description').length !== 0) {
+        $('.product-description__tabs-wrapper').each(function() {
+            let ths = $(this);
+            ths.find('.product-description__tab-item').not(':first').hide();
+            ths.find('.product-description__tab').click(function() {
+                ths.find('.product-description__tab').removeClass('product-description__tab--active').eq($(this).index()).addClass('product-description__tab--active');
+                ths.find('.product-description__tab-item').hide().eq($(this).index()).fadeIn()
+            }).eq(0).addClass('product-description__tab--active');
+        });
+
+        $("#rateYo").rateYo({
+            starWidth: "23px",
+            spacing: "7px",
+            normalFill: "#C4C4C4",
+            ratedFill: "#1C62CD"
+          });
+    }
+
+    
 });
