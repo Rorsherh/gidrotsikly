@@ -157,5 +157,16 @@ if ($('.product-card').length !==0) {
           });
     }
 
+    if ($('.product-info').length !== 0) {
+        $('.product-info__tabs-wrapper').each(function() {
+            let ths = $(this);
+            ths.find('.product-info__tab-item').not(':first').hide();
+            ths.find('.product-info__tab').click(function() {
+                ths.find('.product-info__tab').removeClass('active').eq($(this).index()).addClass('active');
+                ths.find('.product-info__tab-item').hide().eq($(this).index()).fadeIn()
+            }).eq(0).addClass('active');
+        });
+    }
+
     
 });

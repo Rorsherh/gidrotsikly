@@ -1,0 +1,48 @@
+.product-info {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  &__tabs-wrapper {
+    max-width: 1200px;
+    min-height: 200px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    @include borderblack;
+    padding: 22px 36px 24px;
+    background-color: #f0f0f4;
+  }
+
+  &__tab {
+    position: relative;
+    cursor: pointer;
+    color: rgba($color: #2f3035, $alpha: 0.7);
+    &.active {
+      color: rgba($color: #2f3035, $alpha: 1);
+      text-shadow: 0 0 0.65px #000, 0 0 0.65px #000;
+    }
+    &.active::after {
+      display: block;
+      content: "";
+      position: absolute;
+      background-color: #1c62cd;
+      left: 0;
+      right: 0;
+      height: 2px;
+      bottom: -7px;
+    }
+  }
+
+  &__tabs-content {
+    padding: 25px 0;
+    max-width: 1134px;
+    margin-left: auto;
+    @include borderblue;
+  }
+}

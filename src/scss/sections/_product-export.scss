@@ -1,0 +1,64 @@
+.product-export {
+  &__wrapper {
+    padding-top: 25px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  &__top label {
+    color: rgba(47, 48, 53, 0.7);
+    position: relative;
+  }
+
+  &__text-input {
+    margin-right: 155px;
+  }
+
+  &__text-input input {
+    width: 313px;
+    height: 33px;
+    left: 495px;
+    top: 1066px;
+    background-color: #f0f0f4;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-left: 15px;
+  }
+
+  &__radio-input {
+    margin-right: 57px;
+  }
+
+  &__radio-input input {
+    display: none;
+  }
+
+  &__castom-radio {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+
+  &__radio-input input:checked + .product-export__castom-radio {
+    border: 1px solid #1c62cd;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: #1c62cd;
+      top: 50%;
+      left: 50%;
+      margin-top: -4px;
+      margin-left: -4px;
+    }
+  }
+}

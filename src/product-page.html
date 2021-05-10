@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/ion.rangeSlider.css">
     <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -210,9 +211,285 @@
                         <a class="product-description__buy" href="#">купить</a>
                     </div>
                 </div>
+                <div class="product-description__button-content">
+                    <section class="product-info">
+                        <div class="product-info__tabs-wrapper">
+                            <div class="product-info__tabs">
+                                <span class="product-info__tab">О товаре</span>
+                                <span class="product-info__tab">Характеристики</span>
+                                <span class="product-info__tab">Отзывы</span>
+                                <span class="product-info__tab">Самовыхоз</span>
+                                <span class="product-info__tab">Доставка</span>
+                                <span class="product-info__tab">Сервис</span>
+                                <span class="product-info__tab">Гарантия</span>
+                            </div>
+                            <div class="product-info__tabs-content">
+                                <div class="product-info__tab-item">
+                                    <form action="#" class="product-export">
+                                        <div class="product-export__wrapper">
+                                            <div class="product-export__top">
+                                                <label class="product-export__text-input" for="aaa">
+                                                    Магазин
+                                                    <input type="text" id="aaa">
+                                                </label>
+                                                <label class="product-export__radio-input" for="bbb">
+                                                    <input type="radio" name="radio123" id="bbb">
+                                                    <span class="product-export__castom-radio"></span>
+                                                    Забрать сегодня
+                                                </label>
+                                                <label class="product-export__radio-input" for="ccc">
+                                                    <input type="radio" name="radio123" id="ccc" checked>
+                                                    <span class="product-export__castom-radio"></span>
+                                                    Забрать в течении недели
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="product-info__tab-item">Содержимое Характеристики</div>
+                                <div class="product-info__tab-item">
+                                    Содержимое Отзывы
+                                </div>
+                                <div class="product-info__tab-item">
+
+                                </div>
+                                <div class="product-info__tab-item">Содержимое Доставка</div>
+                                <div class="product-info__tab-item">Содержимое Сервис</div>
+                                <div class="product-info__tab-item">Содержимое Гарантия</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
         </section>
         <!--    ----    ----  product-description end  ----    ----  -->
+
+        <section class="products products--second">
+            <div class="products__wrapper">
+                <h3 class="products__title">С этим товаром покупают</h3>
+                <form class="products__filter-list">
+                    <a class="products__filter-item" href="#">запчасти</a>
+                    <a class="products__filter-item" href="#">моторы</a>
+                    <a class="products__filter-item" href="#">шины</a>
+                    <a class="products__filter-item products__filter-item--active" href="#">электроника</a>
+                    <a class="products__filter-item" href="#">инструменты</a>
+                    <a class="products__filter-item" href="#">аксесуары</a>
+                </form>
+
+                <div class="products__content">
+                    <div class="products__slider">
+
+                        <div class="products__slider-item">
+                            <div class="products__slider-item-inner">
+                                <div class="product-card">
+                                    <a href="#" class="product-card__link">
+                                        <div class="product-card__wrapper">
+                                            <div class="product-card__sale">sale</div>
+                                            <div class="product-card__info">
+                                                <p class="product-card__hover-text">
+                                                    посмотреть товар
+                                                </p>
+                                                <img class="product-card__img" src="img/content/product-1.png" alt="">
+                                                <h3 class="product-card__title">
+                                                    Водонепроницаемый Рюкзак
+                                                </h3>
+                                                <div class="product-card__price">
+                                                    9 800 ₽
+                                                </div>
+                                                <div class="product-card__notify">
+                                                    <p>нет в наличии</p>
+                                                    <a href="">
+                                                        <span> сообщить о поступлении</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button class="product-card__favorite"></button>
+                                            <button class="product-card__basket">
+                                                <img src="icons/basket-white.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="products__slider-item">
+                            <div class="products__slider-item-inner">
+                                <section class="product-card">
+                                    <a href="#" class="product-card__link">
+                                        <div class="product-card__wrapper product-card__wrapper--sale">
+                                            <div class="product-card__sale">sale</div>
+                                            <div class="product-card__info">
+                                                <p class="product-card__hover-text">
+                                                    посмотреть товар
+                                                </p>
+                                                <img class="product-card__img" src="img/content/product-2.png" alt="">
+                                                <h3 class="product-card__title">
+                                                    Спасательный жилет BRP Men's Airflow PFD
+                                                </h3>
+                                                <div class="product-card__price">
+                                                    6 900 ₽
+                                                </div>
+                                                <div class="product-card__notify">
+                                                    <p>нет в наличии</p>
+                                                    <a href="">
+                                                        сообщить о поступлении
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="product-card__favorite product-card__favorite--active"></button>
+                                            <button class="product-card__basket">
+                                                <img src="icons/basket-white.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </a>
+                                </section>
+                            </div>
+                        </div>
+
+
+                        <div class="products__slider-item">
+                            <div class="products__slider-item-inner">
+                                <section class="product-card">
+                                    <a href="#" class="product-card__link">
+                                        <div class="product-card__wrapper">
+                                            <div class="product-card__info">
+                                                <p class="product-card__hover-text">
+                                                    посмотреть товар
+                                                </p>
+                                                <img class="product-card__img" src="img/content/product-3.png" alt="">
+                                                <h3 class="product-card__title">
+                                                    BRP Audio-Premium<br>System
+                                                </h3>
+                                                <div class="product-card__price">
+                                                    68 000 ₽
+                                                </div>
+                                                <div class="product-card__notify">
+                                                    <p>нет в наличии</p>
+                                                    <a href="">
+                                                        <span> сообщить о поступлении</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button class="product-card__favorite"></button>
+                                            <button class="product-card__basket">
+                                                <img src="icons/basket-white.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </a>
+                                </section>
+                            </div>
+                        </div>
+
+
+                        <div class="products__slider-item">
+                            <div class="products__slider-item-inner">
+                                <section class="product-card product-card--not-available">
+                                    <a href="#" class="product-card__link">
+                                        <div class="product-card__wrapper product-card__wrapper--sale">
+                                            <div class="product-card__sale">sale</div>
+                                            <div class="product-card__info">
+                                                <p class="product-card__hover-text">
+                                                    посмотреть товар
+                                                </p>
+                                                <img class="product-card__img" src="img/content/product-4.png" alt="">
+                                                <h3 class="product-card__title">
+                                                    Спасательное снаряжение
+                                                </h3>
+                                                <div class="product-card__price">
+                                                    9 800 ₽
+                                                </div>
+                                                <div class="product-card__notify">
+                                                    <div class="product-card__notify-text">нет в наличии</div>
+                                                    <a class="product-card__notify-link" href="#">
+                                                        Cообщить о поступлении
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button class="product-card__favorite"></button>
+                                            <button class="product-card__basket">
+                                                <img src="icons/basket-white.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </a>
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="products__slider-item">
+                            <div class="products__slider-item-inner">
+                                <section class="product-card">
+                                    <a href="#" class="product-card__link">
+                                        <div class="product-card__wrapper">
+                                            <div class="product-card__info">
+                                                <p class="product-card__hover-text">
+                                                    посмотреть товар
+                                                </p>
+                                                <img class="product-card__img" src="img/content/product-1.png" alt="">
+                                                <h3 class="product-card__title">
+                                                    Водонепроницаемый Рюкзак
+                                                </h3>
+                                                <div class="product-card__price">
+                                                    9 800 ₽
+                                                </div>
+                                                <div class="product-card__notify">
+                                                    <p>нет в наличии</p>
+                                                    <a href="">
+                                                        <span> сообщить о поступлении</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button class="product-card__favorite"></button>
+                                            <button class="product-card__basket">
+                                                <img src="icons/basket-white.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </a>
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="products__slider-item">
+                            <div class="products__slider-item-inner">
+                                <section class="product-card">
+                                    <a href="#" class="product-card__link">
+                                        <div class="product-card__wrapper">
+                                            <div class="product-card__info">
+                                                <p class="product-card__hover-text">
+                                                    посмотреть товар
+                                                </p>
+                                                <img class="product-card__img" src="img/content/product-1.png" alt="">
+                                                <h3 class="product-card__title">
+                                                    Водонепроницаемый Рюкзак
+                                                </h3>
+                                                <div class="product-card__price">
+                                                    9 800 ₽
+                                                </div>
+                                                <div class="product-card__notify">
+                                                    <p>нет в наличии</p>
+                                                    <a href="">
+                                                        <span> сообщить о поступлении</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button class="product-card__favorite"></button>
+                                            <button class="product-card__basket">
+                                                <img src="icons/basket-white.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </a>
+                                </section>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!--    ++++    ++++  main-footer start  ++++    ++++  -->
@@ -276,6 +553,7 @@
     <!--    ----    ----  main-footer end  ----    ----  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/jquery.rateyo.js"></script>
     <script src="js/main.js"></script>
 </body>
