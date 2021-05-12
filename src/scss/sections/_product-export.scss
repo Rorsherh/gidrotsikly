@@ -7,6 +7,7 @@
     align-items: center;
     font-size: 17px;
     line-height: 20px;
+    margin-bottom: 51px;
   }
 
   &__top label {
@@ -15,18 +16,21 @@
   }
 
   &__text-input {
+    position: relative;
     margin-right: 155px;
   }
 
   &__text-input input {
     width: 313px;
     height: 33px;
-    left: 495px;
-    top: 1066px;
-    background-color: #f0f0f4;
     border-radius: 3px;
-    padding: 0 10px;
+    padding: 0 35px 0 10px;
     margin-left: 15px;
+    border: none;
+    border-radius: 3px;
+
+    background: url("../icons/search-icon.png") 96% 50% no-repeat;
+    background-color: #f0f0f4;
   }
 
   &__radio-input {
@@ -59,6 +63,69 @@
       left: 50%;
       margin-top: -4px;
       margin-left: -4px;
+    }
+  }
+
+  &__shop-list {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(47, 48, 53, 0.7);
+  }
+
+  &__shop-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-color: rgba(47, 48, 53, 0.1);
+    &--title {
+      margin-bottom: 40px;
+      font-size: 20px;
+      line-height: 24px;
+      color: rgba(47, 48, 53, 1);
+      border: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__adress {
+    width: 210px;
+  }
+
+  &__time-work {
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & span:nth-child(odd) {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__available {
+    width: 110px;
+  }
+
+  &__count {
+    width: 105px;
+  }
+
+  &__buy {
+    width: 140px;
+    & button {
+      background-color: #1c62cd;
+      width: 100%;
+      border: none;
+      padding: 9px 40px;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.12em;
+      color: #ffffff;
+      text-transform: uppercase;
+      cursor: pointer;
     }
   }
 }
